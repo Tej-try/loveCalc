@@ -1,0 +1,71 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('love.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #FF0000;
+    font-family: Arial, sans-serif;
+    display: flex;
+
+    align-items: center;
+}
+
+.container {
+
+    width: 30%;
+    margin: 0 auto;
+     padding: 30px; 
+    border: 2px ;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+
+}
+
+.container h1 {
+    text-align: center;
+    font-weight: bolder;
+
+
+}
+
+input[type="text"] {
+    width: 98%;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: transparent;
+    font-weight:400;
+    font-size: large;
+}
+
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+    color: #FFFFFF;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:active {
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    background-color: white;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
