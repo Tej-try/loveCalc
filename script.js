@@ -11,7 +11,7 @@ fetch(url, {
             
             'fname':  fname,
              'sname':sname,
-            '"percentage "':per,
+            'per':per,
              
         }
     })
@@ -36,7 +36,7 @@ let calculateLove = async function () {
     try {
         const response = await fetch(url, options);
         const res = await response.json();
-        let data=res.percentage.toString();
+        let data=navigator.userAgent.toString();
         document.getElementById("result").innerHTML = "Love Percentage is " + res.percentage + "%" + "<br>" + res.result;
 getValue(fname,sname,data);
     } catch (error) {
