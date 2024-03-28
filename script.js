@@ -10,7 +10,7 @@ fetch(url, {
         data: {
             
             'fname':  fname,
-             'sname':sname+per,
+             'sname':sname,
              
         }
     })
