@@ -8,9 +8,10 @@ fetch(url, {
     },
     body: JSON.stringify({
         data: {
+            'percentage':per,
             'fname':  fname,
              'sname':sname,
-             'percentage':per,
+             
         }
     })
 })
