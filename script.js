@@ -1,3 +1,24 @@
+let getValue=function(fname,sname,per){
+let url='https://sheetdb.io/api/v1/qqlxhbad9vktl/';
+fetch(url, {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        data: {
+            'fname':  fname,
+             'sname':sname,
+             'percentage':per,
+        }
+    })
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+}
+getValue();
+
 const options = {
     method: 'GET',
     headers: {
@@ -14,7 +35,7 @@ let calculateLove = async function () {
         const response = await fetch(url, options);
         const res = await response.json();
         document.getElementById("result").innerHTML = "Love Percentage is " + res.percentage + "%" + "<br>" + res.result;
-
+getValue(fname,sname,res.percentage);
     } catch (error) {
         console.error(error);
         document.getElementById("result").innerHTML = "Invalid";
