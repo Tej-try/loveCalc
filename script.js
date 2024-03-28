@@ -11,7 +11,7 @@ fetch(url, {
             
             'fname':  fname,
              'sname':sname,
-            'percentage':per,
+            '"percentage "':per,
              
         }
     })
